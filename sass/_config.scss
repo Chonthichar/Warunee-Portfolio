@@ -1,0 +1,18 @@
+//Variables
+$website-width:128opx;
+$main-color: #F4A442;
+$light-color: #f4f4f4;
+$dark-color: #333;
+$blue-color: #98BAE7;
+$text-color: #71DFE7;
+$bg-image: url('../css/image/1.jpg');
+$pf-image: url('../css/image/2.jpg');
+
+//set text color implement backfround color
+@function set-text-color($color){
+  @if (lightness($color) > 50){
+    @return #000;
+  } @else{
+  @return #fff
+}
+}
